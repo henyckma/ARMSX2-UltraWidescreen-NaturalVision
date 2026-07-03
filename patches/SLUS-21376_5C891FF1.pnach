@@ -1,0 +1,35 @@
+gametitle=BLACK (SLUS_21376)
+comment=Widescreen by No.47 and P8M3, edited for 19.5:9 by Heny
+//patch=1,EE,203BE83C,word,00000001
+//patch=1,EE,204BC150,word,00000001
+//patch=1,EE,204BD18C,word,00000001
+//patch=1,EE,204CA554,word,3FE38E39
+//patch=1,EE,204CA5F0,word,3FAAAAAB
+//patch=1,EE,204CA5F4,word,3FE38E39
+//patch=1,EE,204CA694,word,3FE38E39
+//patch=1,EE,205BC390,word,3F400000
+
+//patch=1,EE,203BE83C,word,00000001
+//patch=1,EE,204BC150,word,00000001
+//patch=1,EE,204BD18C,word,00000001
+//patch=1,EE,204CA554,word,401851ec
+//patch=1,EE,204CA5F0,word,3fe00000
+//patch=1,EE,204CA5F4,word,401851ec
+//patch=1,EE,204CA694,word,401851ec
+//patch=1,EE,205BC390,word,3F400000
+
+[NaturalVision Phone UltraWideScreen]
+patch=1,EE,203BE83C,word,00000001
+patch=1,EE,204BC150,word,00000001
+patch=1,EE,204BD18C,word,00000001
+patch=1,EE,204CA554,word,400d70a4
+patch=1,EE,204CA5F0,word,3fd00000
+patch=1,EE,204CA5F4,word,400d70a4
+patch=1,EE,204CA694,word,400d70a4
+patch=1,EE,205BC390,word,3f324925
+
+[60 FPS]
+patch=1,EE,1040DF74,extended,00000001
+
+[Speed]
+patch=1,EE,205A8A9C,extended,3C888889

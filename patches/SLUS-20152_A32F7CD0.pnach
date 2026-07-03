@@ -1,0 +1,6 @@
+gametitle=Ace Combat 04: Shattered Skies (SLUS-20152)
+comment=Widescreen optimized for all iPhone and Android phones (19.5:9 Fullscreen)
+
+[NaturalVision Phone UltraWideScreen]
+patch=1,EE,0010C9F4,word,3c013fa8
+patch=1,EE,0040DACC,word,443f4ddc

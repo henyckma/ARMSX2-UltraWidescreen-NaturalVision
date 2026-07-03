@@ -1,0 +1,8 @@
+gametitle=God of War 2 (SCUS-97481)
+comment=Original patches by nemesis2000, edited by Heny, Widescreen optimized for all iPhone and Android phones (19.5:9 Fullscreen)
+
+[NaturalVision Phone UltraWideScreen]
+patch=1,EE,00234A48,word,46000406
+patch=1,EE,2032F300,word,400d70a4
+patch=1,EE,2032F338,word,400d70a4
+patch=1,EE,20363810,word,400d70a4

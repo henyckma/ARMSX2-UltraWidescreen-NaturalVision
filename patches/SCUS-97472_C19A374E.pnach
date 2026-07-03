@@ -1,0 +1,5 @@
+gametitle=Shadow of the Colossus (NTSC-U)
+comment=Widescreen optimized for all iPhone and Android phones (19.5:9 Fullscreen)
+
+[NaturalVision Phone UltraWideScreen]
+patch=1,EE,2128A1E4,word,3fd55326
