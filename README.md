@@ -1,0 +1,1 @@
+Collection of graphical PS2 hacks ".pnach" patches for ARMSX2 enabling customized foveated rendering to 19.5:9 Ultra-Widescreen aspect ratio used for most common smartphone screens, as well 60 FPS and other useful graphical hacks. For best experience, configure ARMSX2 rendering to "Stretch to Window".
