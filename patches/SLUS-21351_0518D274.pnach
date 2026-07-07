@@ -1,11 +1,19 @@
-gametitle=Need For Speed: Most Wanted - Black Edition (SLUS-21351)
-comment=Widescreen optimized for all iPhone and Android phones (19.5:9 Fullscreen) and 60 FPS
+gametitle=Need For Speed: Most Wanted - Black Edition - NTSC-U (SLUS-21351)
 
-[NaturalVision Phone UltraWideScreen]
+[UltraWidescreen NaturalVision 19.5:9]
+gsaspectratio=19.5:9
+author=Henyckma
+description=Enable enhanced native ultra-widescreen 19.5:9 for all iPhone and Android high-end smartphones. (Original widescreen uses vertical cropping; Enhanced expands the horizontal view)
+//Enable native ultrawidescreen
 patch=1,EE,20553430,extended,3F800000
 patch=1,EE,20553434,extended,3FDCCB05
 patch=1,EE,20AAFED0,extended,00000003
 
+
 [60 FPS]
+author=Henyckma
+description=Enables 60 FPS. Recommended only on high-end devices.
+//60 FPS
 patch=1,EE,0040A500,extended,C4000000
 patch=1,EE,00386D04,extended,C4000000
+

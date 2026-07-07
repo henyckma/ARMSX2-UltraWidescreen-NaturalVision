@@ -4,7 +4,7 @@ gametitle=God of War 2 - NTSC-U (SCUS-97481)
 gsaspectratio=19.5:9
 author=CRASHARKI, nemesis2000 & Henyckma
 description=Enable enhanced native ultra-widescreen 19.5:9 for all iPhone and Android high-end smartphones. (Original widescreen uses vertical cropping; Enhanced expands the horizontal view)
-//enable native ultrawidescreen
+//Enable native ultrawidescreen
 patch=1,EE,00234A48,word,46000406
 patch=1,EE,2032F300,word,400d70a4
 patch=1,EE,2032F338,word,400d70a4

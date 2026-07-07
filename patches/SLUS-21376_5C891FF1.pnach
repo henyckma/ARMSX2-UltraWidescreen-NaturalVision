@@ -1,5 +1,5 @@
-gametitle=BLACK (SLUS_21376)
-comment=Widescreen by No.47 and P8M3, edited for 19.5:9 by Heny
+gametitle=BLACK - NTSC-U (SLUS_21376)
+//16:9
 //patch=1,EE,203BE83C,word,00000001
 //patch=1,EE,204BC150,word,00000001
 //patch=1,EE,204BD18C,word,00000001
@@ -8,7 +8,7 @@ comment=Widescreen by No.47 and P8M3, edited for 19.5:9 by Heny
 //patch=1,EE,204CA5F4,word,3FE38E39
 //patch=1,EE,204CA694,word,3FE38E39
 //patch=1,EE,205BC390,word,3F400000
-
+//21:9
 //patch=1,EE,203BE83C,word,00000001
 //patch=1,EE,204BC150,word,00000001
 //patch=1,EE,204BD18C,word,00000001
@@ -18,7 +18,11 @@ comment=Widescreen by No.47 and P8M3, edited for 19.5:9 by Heny
 //patch=1,EE,204CA694,word,401851ec
 //patch=1,EE,205BC390,word,3F400000
 
-[NaturalVision Phone UltraWideScreen]
+[UltraWidescreen NaturalVision 19.5:9]
+gsaspectratio=19.5:9
+author=No.47, P8M3 & Henyckma
+description=Enable enhanced native ultra-widescreen 19.5:9 for all iPhone and Android high-end smartphones. (Original widescreen uses vertical cropping; Enhanced expands the horizontal view)
+//Enable native ultrawidescreen
 patch=1,EE,203BE83C,word,00000001
 patch=1,EE,204BC150,word,00000001
 patch=1,EE,204BD18C,word,00000001
@@ -28,8 +32,17 @@ patch=1,EE,204CA5F4,word,400d70a4
 patch=1,EE,204CA694,word,400d70a4
 patch=1,EE,205BC390,word,3f324925
 
+
 [60 FPS]
+author=No.47 & P8M3
+description=Enables 60 FPS. Recommended only on high-end devices.
+//60 FPS
 patch=1,EE,1040DF74,extended,00000001
 
-[Speed]
+
+[60 FPS Speed Correction Factor]
+author=No.47 & P8M3
+description=Needed for 60 FPS hack, speed modifier for engine at x2 double rate fixing 60 FPS issues of doubling frame rates.
+//Speed
 patch=1,EE,205A8A9C,extended,3C888889
+

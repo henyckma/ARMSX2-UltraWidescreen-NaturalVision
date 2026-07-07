@@ -1,5 +1,9 @@
-gametitle=Shadow of the Colossus (NTSC-U)
-comment=Widescreen optimized for all iPhone and Android phones (19.5:9 Fullscreen)
+gametitle=Shadow of the Colossus - NTSC-U (SCUS-97472)
 
-[NaturalVision Phone UltraWideScreen]
+[UltraWidescreen NaturalVision 19.5:9]
+gsaspectratio=19.5:9
+author=Henyckma
+description=Enable enhanced native ultra-widescreen 19.5:9 for all iPhone and Android high-end smartphones. (Original widescreen uses vertical cropping; Enhanced expands the horizontal view)
+//Enable native ultrawidescreen
 patch=1,EE,2128A1E4,word,3fd55326
+

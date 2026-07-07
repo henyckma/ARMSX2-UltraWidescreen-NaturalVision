@@ -1,6 +1,10 @@
-gametitle=Ace Combat 04: Shattered Skies (SLUS-20152)
-comment=Widescreen optimized for all iPhone and Android phones (19.5:9 Fullscreen)
+gametitle=Ace Combat 04: Shattered Skies - NTSC-U (SLUS-20152)
 
-[NaturalVision Phone UltraWideScreen]
+[UltraWidescreen NaturalVision 19.5:9]
+gsaspectratio=19.5:9
+author=Henyckma
+description=Enable enhanced native ultra-widescreen 19.5:9 for all iPhone and Android high-end smartphones. (Original widescreen uses vertical cropping; Enhanced expands the horizontal view)
+//Enable native ultrawidescreen
 patch=1,EE,0010C9F4,word,3c013fa8
 patch=1,EE,0040DACC,word,443f4ddc
+
