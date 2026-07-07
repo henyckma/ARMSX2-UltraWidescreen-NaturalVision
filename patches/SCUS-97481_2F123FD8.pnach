@@ -1,8 +1,12 @@
-gametitle=God of War 2 (SCUS-97481)
-comment=Original patches by nemesis2000, edited by Heny, Widescreen optimized for all iPhone and Android phones (19.5:9 Fullscreen)
+gametitle=God of War 2 - NTSC-U (SCUS-97481)
 
-[NaturalVision Phone UltraWideScreen]
+[UltraWidescreen NaturalVision 19.5:9]
+gsaspectratio=19.5:9
+author=CRASHARKI, nemesis2000 & Henyckma
+description=Enable enhanced native ultra-widescreen 19.5:9 for all iPhone and Android high-end smartphones. (Original widescreen uses vertical cropping; Enhanced expands the horizontal view)
+//enable native ultrawidescreen
 patch=1,EE,00234A48,word,46000406
 patch=1,EE,2032F300,word,400d70a4
 patch=1,EE,2032F338,word,400d70a4
 patch=1,EE,20363810,word,400d70a4
+
