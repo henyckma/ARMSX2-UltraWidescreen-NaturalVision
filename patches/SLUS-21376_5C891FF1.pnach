@@ -35,14 +35,9 @@ patch=1,EE,205BC390,word,3f324925
 
 [60 FPS]
 author=No.47 & P8M3
-description=Enables 60 FPS. Recommended only on high-end devices.
+description=Enables 60 FPS. Recommended only on high-end devices. Integrated Speed Correction Factor.
 //60 FPS
 patch=1,EE,1040DF74,extended,00000001
-
-
-[60 FPS Speed Correction Factor]
-author=No.47 & P8M3
-description=Needed for 60 FPS hack, speed modifier for engine at x2 double rate fixing 60 FPS issues of doubling frame rates.
-//Speed
+//60 FPS Speed Correction Factor
 patch=1,EE,205A8A9C,extended,3C888889
 
