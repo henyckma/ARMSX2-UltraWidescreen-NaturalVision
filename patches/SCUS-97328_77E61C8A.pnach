@@ -1,0 +1,233 @@
+gametitle=Gran Turismo 4 (SCUS-97328)
+
+[UltraWidescreen NaturalVision 19.5:9]
+gsaspectratio=19.5:9
+author=P8M3 & Henyckma
+description=Enable enhanced native ultra-widescreen 19.5:9 for all iPhone and Android high-end smartphones. (Original widescreen uses vertical cropping; Enhanced expands the horizontal view)
+//Enable native ultrawidescreen
+patch=1,EE,21BE83E0,extended,3F53AFB8
+patch=1,EE,21BF5B60,extended,3F53AFB8
+
+[No-Interlacing]
+description=Autoboot in 480p
+author=Silent
+patch=1,EE,20312544,extended,34080001
+patch=1,EE,20312558,extended,AE481718
+
+[Always Enable Rearview Mirror]
+author=ashesaysgex
+description=Forces rearview mirror visibility for all camera modes
+patch=1,EE,2023F5B0,extended,10000003
+
+[Enable High Chase Camera]
+comment=Add the high chase camera from GT4 Prologue
+author=TheAdmiester
+// Edit each check of usingRaisedCam to pass (beq v0,zero changed to bne v0,v0)
+patch=1,EE,2068AEC0,extended,1442000A
+patch=1,EE,2068AF98,extended,1442000A
+patch=1,EE,2068B038,extended,1442000A
+patch=1,EE,2068B094,extended,1442000A
+
+[Disable Licence/Mission Assists]
+comment=Disable ASM and TCS in licences and mission races.
+author=TheAdmiester
+// QUICK_MENU::ApplyLicenseRaceOption
+patch=1,EE,1010C1FC,extended,0000 // Parameter passed into RaceOrganization::setSteerAssistAsm
+patch=1,EE,1010C20C,extended,0000 // Parameter passed into RaceOrganization::setSteerAssistTcs
+// QUICK_MENU::ApplyMissionRaceOption
+patch=1,EE,1010C254,extended,0000 // Parameter passed into RaceOrganization::setSteerAssistAsm
+patch=1,EE,1010C264,extended,0000 // Parameter passed into RaceOrganization::setSteerAssistTcs
+
+[AI Difficulty Cheats\1st Position Pace Modifier]
+author=ashesaysgex
+patch=1,EE,21E72C5E,extended,00003F8C
+[AI Difficulty Cheats\2nd Position Pace Modifier]
+author=ashesaysgex
+patch=1,EE,21E7719E,extended,00003F8C
+[AI Difficulty Cheats\3rd Position Pace Modifier]
+author=ashesaysgex
+patch=1,EE,21E7B6DE,extended,00003F8C
+[AI Difficulty Cheats\4th Position Pace Modifier]
+author=ashesaysgex
+patch=1,EE,21E7FC1E,extended,00003F8C
+[AI Difficulty Cheats\5th Position Pace Modifier]
+author=ashesaysgex
+patch=1,EE,21E8415E,extended,00003F8C
+[AI Difficulty Cheats\1st Position Downforce Modifier]
+author=ashesaysgex
+patch=1,EE,21E8BAB2,extended,00003F96
+[AI Difficulty Cheats\2nd Position Downforce Modifier]
+author=ashesaysgex
+patch=1,EE,21E8BB92,extended,00003F96
+[AI Difficulty Cheats\3rd Position Downforce Modifier]
+author=ashesaysgex
+patch=1,EE,21E8BD52,extended,00003F96
+[AI Difficulty Cheats\4th Position Downforce Modifier]
+author=ashesaysgex
+patch=1,EE,21E8BE32,extended,00003F96
+[AI Difficulty Cheats\5th Position Downforce Modifier]
+author=ashesaysgex
+patch=1,EE,21E8C02A,extended,00003F96
+
+[AI Difficulty Cheats\Disable AI (Press Select & Left To Activate, Press Select & Right To Disable)]
+author=ashesaysgex
+description=Ported from original patch by codejunkies
+patch=1,EE,D0681345,extended,0000FF7E
+patch=1,EE,20210A70,extended,24020000
+patch=1,EE,D0681345,extended,0000FFDE
+patch=1,EE,20210A70,extended,1440FFF9
+
+[Car Cheats\All Cars Are Free + Can Purchase Any Car]
+author=ashesaysgex
+description=
+patch=1,EE,201483D0,extended,24100000
+patch=1,EE,20317174,extended,0002282D
+patch=1,EE,203085F4,extended,24020000
+
+[Car Cheats\Allow all cars to be modified in GT Auto]
+author=ashesaysgex
+description=Ported from original patch by 47iscool.
+patch=1,EE,2012EA80,extended,00000000
+patch=1,EE,2012ECC8,extended,00000000
+patch=1,EE,2012EDE8,extended,00000000
+
+[Car Cheats\All Parts Temporarily Unlocked]
+author=ashesaysgex
+description=This makes the game think you have purchased every part for the current car where you can change out parts,
+as an added bonus it also allows you to drive any vehicle on the dirt & snow courses.
+patch=1,EE,202FEBE8,extended,20420001
+
+[Car Cheats\Disable Rev Limiter]
+author=ashesaysgex
+description=Ported from original patch by 47iscool. Your car will no longer back down at its original top speed. Enjoy!
+patch=1,EE,20217FCC,extended,1000000A
+
+[Car Cheats\Garage Slot Car 1 Always Has Super Soft (R5) Tires Equipped]
+author=ashesaysgex
+description=Ported from original patch by 47iscool. (GT Mode) Sets current car's tire compound to RSS/R5.
+patch=1,EE,209C81E8,extended,0000B2A3
+patch=1,EE,209C81F0,extended,0000B29D
+
+[Car Cheats\Infinite Fuel]
+author=ashesaysgex
+description=Ported from original patch by Code Master.
+patch=1,EE,20217840,extended,00000000
+patch=1,EE,20217844,extended,00000000
+
+[Car Cheats\Infinite Nitrous]
+author=ashesaysgex
+description=Ported from original patch by MadCatz.
+patch=1,EE,202177B0,extended,3E01461E
+patch=1,EE,202177B4,extended,34214000
+patch=1,EE,202177C4,extended,E46204E0
+
+[Car Cheats\No Tire Wear (All Cars)]
+author=ashesaysgex
+description=Ported from original patch by Code Master.
+patch=1,EE,20215E64,extended,00000000
+
+[Car Cheats\No Tire Wear (Your Car)]
+author=ashesaysgex
+description=Disables tire wear for your car.
+patch=1,EE,200C20E0,extended,3E010000
+patch=1,EE,200C20E4,extended,34210000
+patch=1,EE,200C20E8,extended,AE810213
+patch=1,EE,200C20EC,extended,AE810307
+patch=1,EE,200C20F0,extended,AE8103FB
+patch=1,EE,200C20F4,extended,AE8104EF
+patch=1,EE,200C20F8,extended,03E00008
+patch=1,EE,200C20FC,extended,8E650014
+patch=1,EE,201C42C0,extended,0C030838
+
+[Car Cheats\Perfect Car Body Condition]
+author=ashesaysgex
+description=
+patch=1,EE,209C8678,extended,00000000
+
+[Car Cheats\Perfect Car Engine Condition]
+author=ashesaysgex
+description=
+patch=1,EE,209C866C,extended,00000000
+
+[Car Cheats\Perfect Car Cleanliness]
+author=ashesaysgex
+description=
+patch=1,EE,209C8674,extended,00000000
+
+[Car Cheats\Perfect Car Oil Condition]
+author=ashesaysgex
+description=
+patch=1,EE,209C8670,extended,00000000
+
+[HUD Cheats\Always Enable Rearview Mirror]
+author=ashesaysgex
+description=Forces rearview mirror visibility for all camera modes.
+patch=1,EE,2023F5B0,extended,10000003
+
+[HUD Cheats\Disable Rearview Mirror]
+author=ashesaysgex
+description=Disables the rearview mirror visibility in all cases.
+patch=1,EE,2023F5B0,extended,10000003
+
+[License Cheats\B License - All Gold]
+author=ashesaysgex
+description=Enable before starting the game to get reward cars.
+patch=1,EE,209C8FF4,bytes,
+91F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F90000
+91F90000
+
+[License Cheats\A License - All Gold]
+author=ashesaysgex
+description=Enable before starting the game to get reward cars.
+patch=1,EE,209C9034,bytes,
+91F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F90000
+91F90000
+
+[License Cheats\IB License - All Gold]
+author=ashesaysgex
+description=Enable before starting the game to get reward cars.
+patch=1,EE,209C9074,bytes,
+91F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F90000
+91F90000
+
+[License Cheats\IA License - All Gold]
+author=ashesaysgex
+description=Enable before starting the game to get reward cars.
+patch=1,EE,209C90B4,bytes,
+91F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F90000
+91F90000
+
+[License Cheats\S License - All Gold]
+author=ashesaysgex
+description=Enable before starting the game to get reward cars.
+patch=1,EE,209C90F4,bytes,
+91F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F9000091F90000
+91F90000
+
+[License Cheats\Coffee Breaks - All Gold]
+author=ashesaysgex
+description=Does not grant the reward cars. Sorry :/
+patch=1,EE,209C9134,bytes,91F9000091F9000091F9000091F9000091F90000
+
+[Timer/Penalty Cheats\Freeze Timer]
+author=ashesaysgex
+description=Press L3 to stop, R3 to restart. Ported from original patch by codejunkies
+patch=1,EE,D0681344,extended,0000FFFD
+patch=1,EE,2021AD04,extended,2A000032
+patch=1,EE,D0681344,extended,0000FFFB
+patch=1,EE,2021AD04,extended,24420032
+
+[Timer/Penalty Cheats\No Penalty Time]
+author=ashesaysgex
+description=The penalty countdown timer instantly disappears and no penalty is applied.
+patch=1,EE,20223314,extended,00631823
+
+[Timer/Penalty Cheats\Ultra Fast Timer]
+author=ashesaysgex
+description=May be useful for timed endurance events.
+patch=1,EE,2021AD04,extended,24420FFF
+
+[Timer/Penalty Cheats\Ultra Slow Timer]
+author=ashesaysgex
+description=
+patch=1,EE,2021AD04,extended,24420001
